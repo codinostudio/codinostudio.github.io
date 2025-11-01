@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codino | Indie Game Developer</title>
+  <link rel="icon" type="image/png" href="codino.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Bai Jamjuree',sans-serif;scroll-behavior:smooth}
+    body{background:#0b0b0b;color:#fff;overflow-x:hidden}
+    header{position:fixed;width:100%;top:0;left:0;background:#0d0d0d;padding:20px 10%;display:flex;justify-content:space-between;align-items:center;z-index:999;border-bottom:1px solid rgba(255,255,255,0.05)}
+    header h1{color:#ff8800;font-size:1.8rem;font-weight:700}
+    header nav a{color:#fff;margin-left:30px;text-decoration:none;font-weight:500;transition:.3s}
+    header nav a:hover{color:#ff8800}
+    .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 10%;background:#0b0b0b}
+    .hero h2{font-size:3rem;color:#fff;margin-bottom:15px}
+    .hero span{color:#ff8800}
+    .hero p{font-size:1.2rem;color:#ddd;max-width:800px;line-height:1.8}
+    .hero button{margin-top:35px;background:#ff8800;color:#000;border:none;padding:15px 45px;font-size:1.05rem;font-weight:700;border-radius:35px;cursor:pointer;transition:.3s}
+    .hero button:hover{background:#e67300;color:#fff}
+    section{padding:120px 10%;max-width:1000px;margin:auto}
+    .section-title{text-align:center;font-size:2.3rem;color:#ff8800;margin-bottom:25px}
+    .about p{font-size:1.15rem;line-height:1.9;color:#ddd;text-align:center}
+    .contact{text-align:center}
+    .contact p{font-size:1.1rem;color:#ccc;margin-bottom:40px}
+    .links a{display:inline-block;margin:10px 20px;background:#ff8800;color:#000;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:700;transition:.3s}
+    .links a:hover{background:#e67300;color:#fff}
+    footer{text-align:center;padding:40px 10%;background:#0d0d0d;color:#888;margin-top:60px;border-top:1px solid rgba(255,255,255,0.05)}
+    footer a{color:#ff8800;text-decoration:none}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    .hero,.about,.contact{animation:fadeUp 1.2s ease both}
+    @media(max-width:768px){
+      header{padding:20px 6%}
+      header nav a{margin-left:15px;font-size:.95rem}
+      .hero h2{font-size:2.2rem}
+      .hero p{font-size:1rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Codino</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hey, I'm <span>Codino</span></h2>
+    <p>I’m an indie game developer, pixel artist, composer, and devlogger. I love creating small but meaningful worlds filled with color, sound, and emotion. My work combines storytelling and design to make experiences that feel alive and personal.</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn more</button>
+  </section>
+
+  <section id="about" class="about">
+    <h3 class="section-title">About Me</h3>
+    <p>Games have always felt like more than just games to me. They can tell stories, share emotions, and build connections.  
+    I enjoy experimenting with ideas, creating pixel art that feels alive, and composing soundtracks that match the mood of each scene.  
+    Through my devlogs, I share what I learn along the way and try to show how creativity grows from simple ideas.  
+    Every project is a new story waiting to be told, and I love the process of making it real.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3 class="section-title">Contact</h3>
+    <p>If you’d like to collaborate, talk about a project, or just say hi, feel free to reach out. I’d love to connect.</p>
+    <div class="links">
+      <a href="https://www.youtube.com/@Codino-Studio" target="_blank">YouTube</a>
+      <a href="https://codinostudio.itch.io" target="_blank">itch.io</a>
+      <a href="mailto:codinostudio@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Codino | <a href="mailto:codinostudio@gmail.com">codinostudio@gmail.com</a>
+  </footer>
+</body>
+</html>
